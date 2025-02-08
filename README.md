@@ -6,7 +6,7 @@ This project is a **Movie Recommendation System** that suggests movies based on 
 
 - **Random Movie Selection**: The system selects a random set of 10 movies from the dataset.
 - **Personalized Recommendations**: The app recommends 3 movies based on the 3 movies selected by the user. The system uses pre-trained models here.
-- **Cosine Similarity and Content Based Filtering**: Use machine learning models to calculate similarities between movies based on their genre, overview, and release year.
+- **Cosine Similarity and Content Based Filtering**: The system uses machine learning models to calculate similarities between movies based on their genre, overview, and release year.
   
 ## Demo
 
