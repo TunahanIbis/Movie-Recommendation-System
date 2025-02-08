@@ -1,4 +1,4 @@
-# Movie Recommendation System
+![Movie Recommendation Model Background](https://github.com/user-attachments/assets/9d76b1c7-ab44-4a02-ab95-88477bdce162)# Movie Recommendation System
 
 This project is a **Movie Recommendation System** that suggests movies based on user preferences. The system uses content-based filtering and machine learning to provide personalized recommendations. It is built using **Flask** for the backend, **HTML/CSS/JavaScript** for the frontend, and leverages **joblib** for loading pre-trained models.
 
@@ -58,10 +58,16 @@ Your project folder will look like this:
 movie-recommendation-system/
 ├── src/
 │   └── app.py                # Flask backend application
+    └── ML Model.py
 ├── data/
-│   ├── models/               # Folder with pre-trained models (e.g., .pkl files)
+│   └── models/               # Folder with pre-trained models (e.g., .pkl files)
 │   └── json/                 # Folder with JSON movie data
-├── templates/                # HTML files
+├── templates/                # HTML file
+    └── index.html
 ├── static/                   # CSS and JavaScript files
-└── requirements.txt          # Dependencies file
+    └── css/
+        └── styles.css 
+    └── images/               # Image files
+    └── js/                   # JS files
+        └── app.js
 ```
