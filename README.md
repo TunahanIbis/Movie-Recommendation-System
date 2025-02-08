@@ -28,7 +28,7 @@ To get started with this project locally, follow these steps:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/movie-recommendation-system.git
+git clone https://github.com/TunahanIbis/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 
