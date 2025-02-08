@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url('../images/Movie Recommendation Model Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#recommendations.hidden {
+    opacity: 0;
+}
+
+h1,
+h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Adds a shadow to the text */
+    font-family: 'Arial', sans-serif;
+    /* Ensures consistent font */
+    text-transform: uppercase;
+    /* Makes text uppercase for a bold look */
+    letter-spacing: 2px;
+    /* Adds some space between letters */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* Always 10 movies per row */
+    gap: 10px;
+    /* Space between images */
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1500px;
+    /* Adjust as needed for responsiveness */
+}
+
+.movie {
+    width: 100%;
+    /* Ensures images fit inside grid */
+    max-width: 120px;
+    /* Adjust if needed */
+    height: auto;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: border 0.3s;
+    margin: 5px;
+}
+
+@media (max-width: 1500px) {
+    .movie-container {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+.movie-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.recommendation-text {
+    font-size: 18px;
+    color: #ffffff;
+    /* White text */
+    font-style: italic;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Set initial state for the text */
+#recommendation-note {
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.5s ease-in-out;
+    /* Fade-in effect over 1 second */
+}
+
+#recommendation-header {
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.5s ease-in-out;
+    /* Fade-in effect over 1 second */
+}
+
+/* Set initial state for the images */
+.poster-transition {
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.5s ease-in-out;
+    /* Fade-in effect over 1 second */
+}
+
+/* When the recommendations are shown, make the text and images visible */
+#recommendations.visible #recommendation-header,
+#recommendations.visible #recommendation-note,
+#recommendations.visible .poster-transition {
+    opacity: 1;
+    /* Make text and images fully visible */
+}
+
+img {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 4px solid #1f1f1f;
+    /* Adds a solid border */
+    border-radius: 10px;
+    /* Rounds the corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow */
+    transform: scale(1.05);
+    /* Slightly enlarges the image */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Keeps the image's aspect ratio, cropping when necessary */
+}
+
+
+.movie:hover {
+    border: 4px solid rgb(1, 205, 1);
+}
+
+.movie.selected {
+    border: 4px solid red;
+}
+
+#recommendations {
+    margin-top: 30px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth fade-in */
+    opacity: 0; /* Start hidden */
+}
+
+#recommendations img {
+    width: 150px;
+    cursor: pointer;
+    height: auto;
+    margin: 10px;
+    border: 4px solid transparent;
+    transition: transform 0.3s ease, opacity 0.5s ease-in-out;
+}
+
+#recommendations img:hover {
+    transform: scale(1.1);
+    /* Slight scale-up effect on hover */
+    opacity: 1;
+    /* Ensure the opacity transition is applied properly */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button#clearButton {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button#clearButton:hover {
+    background-color: #c82333;
+}
+
+button#renewButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button#renewButton:hover {
+    background-color: #0069d9;
+}

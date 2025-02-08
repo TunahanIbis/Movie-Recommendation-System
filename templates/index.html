@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>Movie Recommendation System</h1>
+    <h3>Select 3 movies You Like:</h3>
+    <div id="movies" class="movie-container"></div>
+    <div class="button-container">
+        <button id="clearButton">Clear</button>
+        <button onclick="getRecommendations()">Get Recommendations</button>
+        <button id="renewButton">Renew Movies</button>
+    </div>
+    <div id="recommendations"></div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
