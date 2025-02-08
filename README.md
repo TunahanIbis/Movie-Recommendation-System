@@ -58,16 +58,16 @@ Your project folder will look like this:
 movie-recommendation-system/
 ├── src/
 │   └── app.py                # Flask backend application
-    └── ML Model.py
+    └── ML Model.py           # ML code that dumps the pkl files
 ├── data/
 │   └── models/               # Folder with pre-trained models (e.g., .pkl files)
 │   └── json/                 # Folder with JSON movie data
 ├── templates/                # HTML file
     └── index.html
-├── static/                   # CSS and JavaScript files
-    └── css/
+├── static/                   
+    └── css/                  # CSS file  
         └── styles.css 
-    └── images/               # Image files
-    └── js/                   # JS files
+    └── images/               # Image file
+    └── js/                   # JS file
         └── app.js
 ```
