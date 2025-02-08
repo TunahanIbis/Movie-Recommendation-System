@@ -29,7 +29,7 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/TunahanIbis/Movie-Recommendation-System.git
-cd movie-recommendation-system
+cd Movie-Recommendation-System
 ```
 
 ### Step 2: Install dependencies
