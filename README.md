@@ -12,7 +12,7 @@ This project is a **Movie Recommendation System** that suggests movies based on 
 
 Check out the demo of the Movie Recommendation System here:
 
-[![Demo Video on YouTube](https://img.youtube.com/vi/RQq0XiE4nj4/1.jpg)](https://www.youtube.com/watch?v=RQq0XiE4nj4)
+[![Demo Video on YouTube](https://img.youtube.com/vi/RQq0XiE4nj4/0.jpg)](https://www.youtube.com/watch?v=RQq0XiE4nj4)
 
 ## Installation
 
